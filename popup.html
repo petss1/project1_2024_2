@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/sass/app.scss" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icon/broccoli.svg"
+      type="image/svg"
+    />
+    <title>Organic Vegetables</title>
+  </head>
+  <body>
+<div class="popup">
+      <div class="order">
+        <div class="header-order">
+          <h1 class="title-order">YOUR ORDER</h1>
+          <div class="close"><img src="./assets/img/pictures/x.svg" alt="x" /></div>
+        </div>
+        <div class="order-items">
+          <div class="item">
+            <div class="item-content">
+              <div class="checkbox-container">
+            <input
+              type="checkbox"
+              class="custom-checkbox"
+              id="cabbage"
+              name="cabbage"
+              value="yes"
+            />
+            <label for="cabbage"></label></div>
+            <div class="item-header">
+            <h2 class="title-item">Cabbage Basket</h2>
+            <p class="subtitle-item">Plant</p></div></div>
+            <div class="image"><img src="./assets/img/pictures/cabbage basket.png" alt="Cabbage Basket" />
+          </div>
+        </div>
+          <div class="item">
+            <div class="item-content">
+              <div class="checkbox-container">
+            <input
+              type="checkbox"
+              class="custom-checkbox"
+              id="tomato"
+              name="tomato"
+              value="yes"
+            />
+            <label for="tomato"></label></div>
+            <div class="item-header">
+            <h2 class="title-item">Tomato Basket</h2>
+            <p class="subtitle-item">Plant</p></div></div>
+            <div class="image"><img src="./assets/img/pictures/tomato basket.png" alt="Tomato Basket" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-content">
+              <div class="checkbox-container">
+            <input type="checkbox" class="custom-checkbox" id="vegetables" name="vegetables" value="yes"/>
+            <label for="vegetables"></label></div> 
+            <div class="item-header">
+            <h2 class="title-item">Vegetables Basket</h2>
+            <p class="subtitle-item">Plant</p></div></div>
+            <div class="image"><img src="./assets/img/pictures/vegetables basket.png" alt="Vegetables Basket"/> 
+          </div>
+        </div>
+        </div>
+        <div class="order-lower-container">
+          <div class="form">
+            <input type="text" placeholder="Enter full name..." />
+            <input type="email" placeholder="Enter email..." />
+            <input type="text" placeholder="Enter card..." />
+            <textarea placeholder="Enter comments..."></textarea>
+            <button class="button-submit">Submit</button>
+          </div>
+          <div class="image-container">
+            <img
+              src="./assets/img/pictures/img girl.png"
+              alt="Girl with vegetables"
+            /></div>
+          </div>
+        </div>
+      </div>
+    </html>

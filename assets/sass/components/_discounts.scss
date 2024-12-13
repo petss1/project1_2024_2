@@ -1,0 +1,56 @@
+@use "../abstracts/variables";
+
+.discounts {
+  position: relative;
+  overflow: hidden;
+  margin-top: 5%;
+  padding-bottom: 7%;  
+
+  .discounts__tape {
+    background-color: rgb(252, 138, 17);
+    position: relative;
+    width: 150%;
+    max-height: 100px;
+    left: -4%;
+    margin-top: 9%;
+    transform: rotate(3.00deg);
+    display: flex;
+    align-items: center; 
+
+    .discounts__text {
+      color: rgb(249, 247, 244);
+      font-family: variables.$main-font;
+      font-size: 3vw;
+      font-weight: 500;
+      text-align: left;
+
+      .discounts__pastiche {
+        font-style: italic;
+      }
+    }
+  }
+
+  .discounts__tape_green {
+    background-color: rgb(161, 196, 135);
+    position: relative;
+    width: 150%;
+    max-height: 100px;
+    left: -4%;
+    margin-top: -5%;
+    transform: rotate(-2.00deg);
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .discounts .discounts__tape {
+    max-height: 240px;
+  }
+}
+
+@media screen and (min-width: 4000px) {
+  .discounts .discounts__tape {
+    max-height: 380px;
+  }
+}

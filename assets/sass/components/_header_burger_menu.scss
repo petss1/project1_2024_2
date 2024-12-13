@@ -1,0 +1,30 @@
+.header_burger_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-left: 5vw;
+    width: auto;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    padding-left: 0;
+    padding-right: 5%; 
+}
+.header_burger_menu__logo {
+    display: flex;
+    height: 4vw;
+}
+.header_burger_menu__button_x {
+    width: 3vw;
+    height: auto;
+    cursor: pointer; 
+    display: none;
+}
+
+@media screen and (max-width:376px) {
+    .header_burger_menu__button_x {
+        display: block; 
+        width: 6vw;
+        margin-right: 6%; 
+    }
+}

@@ -1,0 +1,100 @@
+@use "../abstracts/variables";
+.cards-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .cards-list {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .cards-list__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(234, 247, 229);
+        border-radius: 20px;
+        min-height: 100%;
+        width: 32%;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 64px;
+        padding-bottom: 24px;
+        box-sizing: border-box;
+        transition: all 0.3s;
+      }
+      .cards-list__card:hover {
+        transform: translateY(-5px);
+	      box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.1);
+      }
+      .cards-list__img {
+        width: 100%;
+        max-width: 321px;
+        object-fit: cover;
+        align-self: center;
+      }
+      .cards-list__subtitle {
+        font-size: 32px;
+        font-weight: 700;
+        color: variables.$black-color;
+        margin: 0;
+      }
+      .cards-list__caption {
+        font-size: 18px;
+        font-weight: 400;
+        color: variables.$black-color;
+        margin-top: 8px;
+        margin-bottom: 0;
+      }
+      .cards-list__price {
+        font-size: 18px;
+        font-weight: 500;
+        color: variables.$black-color;
+        margin-top: 24px;
+        margin-bottom: 0;
+      }
+  }
+
+  @media screen and (max-width: 1264px) {
+    .cards-list {
+      gap: 20px;
+      @media screen and (max-width: 1063px) {
+        .cards-list__card {
+          width: 48%;
+        }
+        .cards-list__card:last-child {
+          display: none;
+        }
+      } 
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .cards-list {
+    .cards-list__subtitle {
+      font-size: 28px;
+    }
+  }
+  }
+  @media screen and (max-width: 602px) {
+    .cards-list {
+    .cards-list__subtitle {
+      font-size: 24px;
+    }
+  }  
+  }
+  @media screen and (max-width: 563px) {
+    .cards-list {
+    .cards-list__card {
+      width: 96%;
+    }
+    .cards-list__caption {
+      font-size: 14px;
+    }
+    .cards-list__price {
+      font-size: 14px;
+    }
+  }
+  }
+  

@@ -1,0 +1,153 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixin";
+
+.buying-container {
+  margin-left: variables.$side-margin;
+  margin-right: variables.$side-margin;
+  border-radius: 5em;
+  background-size: 60.6px 60.6px;
+  background-repeat: repeat;
+  background-position: 5% 1%, 5% 1%;
+  background-color: rgba(250, 242, 231, 1);
+  background-image: radial-gradient(circle, rgba(229, 228, 210, 1) 3px, transparent 2px), radial-gradient(circle, rgba(229, 228, 210, 1) 3px, transparent 2px);
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(30px, 1fr); 
+  
+  .buying-container__image {
+    grid-area: 1/1/2/2;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    align-self: end;
+  }
+
+  .text {
+    grid-area: 1/2/2/3;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    .text__subtitle {
+      grid-area: 1/2/2/3;
+      @include mixin.font;
+      font-size: 2.9vw;
+      font-weight: 500;
+      text-align: left;
+      text-transform: uppercase;
+      margin-top: 8%;
+      width: 90%;    
+    }
+
+    .text__subtitle:hover {
+      font-size: 3.1vw;
+    }
+  
+    .text__wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 3%;
+
+      .text__point {
+        width: 10%;
+        border-radius: 50%;
+        background-color: rgb(161, 196, 135);
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+
+        .text__number {
+          @include mixin.font;
+          font-size: 1.5vw;
+          font-weight: 400;
+        }   
+      }
+
+      .text__offer {
+        @include mixin.font;
+        font-size: 1.3vw;
+        font-weight: 400;
+        line-height: 2em;
+        text-align: left;
+        margin-left: 4%;
+        width: 58%;
+      }
+      
+      .text__offer_second {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buying-container .text .text__subtitle {
+    font-size: 3.2vw;
+  }
+
+  .buying-container .text .text__wrapper .text__point {
+    width: 3em;
+    height: 3em;
+
+    .text__number {
+      font-size: 2vw;
+    }
+  }
+
+  .buying-container .text .text__wrapper .text__offer {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .buying-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(30px, 1fr);
+    border-radius: 3em;
+    background-position: 9% 1%, 9% 1%;
+    margin-top: 8%;
+    margin-left: variables.$media-margin;
+    margin-right: variables.$media-margin;
+
+    .buying-container__image {
+      grid-area: 2/1/3/2;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      align-self: end;
+    }
+
+    .text {
+      grid-area: 1/1/2/2;
+
+      .text__subtitle {
+        grid-area: 1/2/2/3;
+        margin-left: 6%;
+        font-size: 6vw;
+        width: 90%; 
+        margin-top: 5%;
+        margin-bottom: 3%;
+      } 
+
+      .text__wrapper { 
+        margin-top: 0%; 
+        margin-left: 6%;
+
+        .text__point {
+          width: 3em;
+          height: 3em;
+
+            .text__number {
+              font-size: 3.5vw;
+            }
+        }
+
+        .text__offer {
+          font-size: 3.5vw;
+          line-height: 4.5vw;
+          width: 60%;
+        }
+      }
+    }
+  }
+} 

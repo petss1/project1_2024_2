@@ -1,0 +1,25 @@
+.main_burger_menu__burger_blocks {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%;
+}
+.main_burger_menu__nav_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2vw;
+    padding-top: 15vw;
+    padding-right: 40vw;
+    list-style-type: none; 
+}
+.main_burger_menu__link_text {
+    text-decoration: none;
+    color: white;
+}
+.main_burger_menu__cart {
+    width: 5vw;
+    margin-left: auto;
+    padding-top: 1vw;
+}
+

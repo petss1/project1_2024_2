@@ -1,0 +1,52 @@
+.order-button {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+    gap: 4px;
+    min-height: 114px;
+    width: 114px;
+    background-image: url(../img/pictures/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-image 0.5s ease-in-out;
+    .order-button__order-arrow {
+        padding-top: 15px;
+        padding-left: 18px;
+        height: 14px;
+        width: 14px;
+      }
+      .order-button__order-caption {
+        width: 80%;
+        transform-origin: top left;
+        transform: rotate(-14deg);
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      }
+  }
+  .order-button:hover {
+    background-image: url(../img/pictures/ellipse_green.png);
+    }
+  
+    @media screen and (max-width: 602px) {
+    .order-button {
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width: 563px) {
+    .order-button {
+      min-height: 80px;
+      width: 80px;
+      margin-top: 20px;
+    .order-button__order-caption {
+      font-size: 14px;
+    }
+    .order-button__order-arrow {
+      padding-left: 8px;
+    }
+  }
+  }
+  

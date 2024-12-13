@@ -1,0 +1,127 @@
+
+.footer {
+    background-color: #f0faec; /* Light green background */
+    padding: 2.5em 1.25em; /* 40px 20px */
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75em; /* 1200px */
+    margin: 0 auto;
+    flex-wrap: wrap; /* Для адаптивности */
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.25em; /* 20px */
+}
+
+.footer__image {
+    width: 30vw;
+    margin-top: 2em;
+    height: auto;
+    border-radius: 20%;
+    // background: #fff;
+    padding: 0.625em; /* 10px */
+    margin-left: -8em;
+}
+
+.footer__logo {
+    // font-size: 1.125em;
+    // font-weight: bold;
+    margin-top: 0.625em; /* 10px */
+    margin-left: -8em;
+}
+
+.footer__middle {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 1.25em; /* 20px */
+}
+
+.footer__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.25em; /* 20px */
+}
+
+.footer__menu li {
+    display: inline;
+}
+
+.footer__menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1em; /* 16px */
+    transition: color 0.3s;
+}
+
+.footer__menu a:hover {
+    color: #228b22; /* Dark green hover effect */
+}
+.footer__right {
+    text-align: right;
+    margin-bottom: 1.25em; /* 20px */
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.625em; /* 10px */
+    margin-bottom: 0.625em; /* 10px */
+}
+
+.footer__socials img {
+    width: 2.5em; /* 24px */
+    height: 2.5em; /* 24px */
+}
+
+.footer__contact {
+    font-size: 0.875em; /* 14px */
+    color: #333;
+}
+
+  @media (max-width: 64em) { /* 1024px для планшетов */
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__right {
+        text-align: center;
+    }
+
+    .footer__socials {
+        justify-content: center;
+    }
+    .footer__image{
+        width: 60vw;
+        margin-left:5vw;
+    }
+    .footer__logo{
+        margin-left:5vw;
+    }
+}
+
+  @media (max-width: 30em) { /* 480px для телефонов */
+    .footer__menu {
+        flex-direction: column;
+        gap: 0.625em; /* 10px */
+    }
+
+.footer__menu a {
+        font-size: 0.875em; /* 14px */
+    }
+    
+.footer__contact p {
+        font-size: 0.75em; /* 12px */
+    }
+}
